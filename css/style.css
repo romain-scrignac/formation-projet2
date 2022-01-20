@@ -109,7 +109,7 @@ header a{
 /* règles CSS à appliquer sur mobile */
 @media screen and (max-width: 767px) {
     html::-webkit-scrollbar{display: none;}
-    html{scrollbar-width: none; scrollbar-width: none;}
+    html{-ms-overflow-style: none; scrollbar-width: none;}
     header{align-items: center; flex-direction: column; width: 100%;}
     #logo{margin: 30px 0;}
     #nav{width: 100%; justify-content: center;}
