@@ -89,9 +89,7 @@ header a{
     #nav li:hover a{margin-top: -3px; color: #0065FC;}
     #nav a{height: 130px; align-items: center; text-decoration: none;}    
     #mobile-button{display: none;}
-    #filtres{margin: 20px 0;}
-    #filtres h4{display: inline;}
-    #filtres ul{display: inline-block;}
+    #filtres{margin: 20px 0; display: flex; align-items: center;}
     #filtres li{padding: 13px 20px 13px 0px; margin: 0 10px;}
     #filtres li i{padding: 15px;}
     #hebergements{display: flex; width: 100%; justify-content: space-between; margin-top: 30px;}
