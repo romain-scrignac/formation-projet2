@@ -60,7 +60,7 @@ header a{
 }
 
 #search input{
-   width: 80%; padding: 10px; font-weight: bold; margin-left: 38px; border: 1px solid #F2F2F2;
+   padding: 10px; font-weight: bold; margin-left: 38px; border: 1px solid #F2F2F2;
 }
 
 #search input:focus{
