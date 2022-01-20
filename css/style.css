@@ -217,3 +217,7 @@ header a{
 #recherche a{
     font-weight: bold; text-decoration: none; color: black;
 }
+
+#activites img{
+    width: 100px;
+}
