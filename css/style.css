@@ -180,6 +180,14 @@ header a{
     display: inline;
 }
 
+#filtres li:hover{
+    background-color: #DEEBFF; color: #0065FC; border-color: #DEEBFF; cursor: pointer;
+}
+
+#filtres li:hover i{
+    background-color: #0065FC; color: white;
+}
+
 #filtres li i{
     background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
     color: #0065FC;
