@@ -18,7 +18,7 @@ header a{
 }
 
 #logo{
-    display: flex;
+    display: flex; margin-left: 20px;
 }
 
 #logo img{
@@ -41,8 +41,8 @@ header a{
     height: 100%; display: flex;
 }
 
-#search, #filtres{
-    padding: 0 3%;
+#search, #filtres, #info{
+    margin: 20px 3%;
 }
 
 #search h3{
@@ -53,17 +53,19 @@ header a{
     margin-top: 10px; margin-bottom: 30px; font-size: 14px;
 }
 
+#search form{
+    display: flex;
+}
+
 #search label{
-    padding: 11px 13px 7px 13px;
-    background-color: #F2F2F2; border-radius: 10px 0 0 10px;
-    position: absolute;
+    padding: 11px 13px 7px 13px; background-color: #F2F2F2; border-radius: 10px 0 0 10px;
 }
 
-#search input{
-   padding: 10px; font-weight: bold; margin-left: 38px; border: 1px solid #F2F2F2;
+#search-bar{
+   padding: 10px; font-weight: bold; border: 1px solid #F2F2F2;
 }
 
-#search input:focus{
+#search-bar:focus{
     outline: none;
 }
 
@@ -71,28 +73,49 @@ header a{
     padding: 10px 15px;  background-color: #0065FC; color: white; border: none;
 }
 
+#search button:hover{
+    cursor: pointer;
+}
+
 #desktop-button{
     border-radius: 0 10px 10px 0; margin-left: -4px;
 }
 
-#search button:hover{
-    cursor: pointer
+#filtres li i{
+    background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
+    color: #0065FC;
+}
+
+#filtres ul{
+    padding: 0;
+}
+
+#info{
+    display: flex; align-items: center; font-size: 14px;
+}
+
+#info i{
+    background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
+    color: #0065FC; padding: 7px 12px; border: 3px solid #F2F2F2;
+}
+
+#hebergements{
+    display: flex; width: 100%; margin-top: 30px;
 }
 
 /* règles CSS à appliquer sur ordi */
 @media screen and (min-width: 992px) {
     header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
-    main{padding: 0 3%;}
     #nav{justify-content: space-between; align-items: center;}
     #nav li{height: 100%; width: 120px; justify-content: space-around;}
     #nav li:hover{border-top: 3px solid #0065FC;}
     #nav li:hover a{margin-top: -3px; color: #0065FC;}
     #nav a{height: 130px; align-items: center; text-decoration: none;}    
     #mobile-button{display: none;}
-    #filtres{margin: 20px 0; display: flex; align-items: center;}
+    #filtres{display: flex; align-items: center;}
     #filtres li{padding: 13px 20px 13px 0px; margin: 0 10px;}
     #filtres li i{padding: 15px;}
-    #hebergements{display: flex; width: 100%; justify-content: space-between; margin-top: 30px;}
+    #hebergements{justify-content: space-evenly;}
     #recherche{display: flex; flex-direction: column; width: 63%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
     #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
     #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
@@ -102,6 +125,32 @@ header a{
     #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
     #ligne3 figcaption{padding: 10px;}
     #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
+}
+
+/* règles CSS à appliquer sur tablette */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
+    #nav{justify-content: space-between; align-items: center;}
+    #nav li{height: 100%; width: 120px; justify-content: space-around;}
+    #nav li:hover{border-top: 3px solid #0065FC;}
+    #nav li:hover a{margin-top: -3px; color: #0065FC;}
+    #nav a{height: 130px; align-items: center; text-decoration: none;}
+    #mobile-button{display: none;}
+    #search h3{font-size: 20px;}
+    #search p{font-size: 15px;}
+    #hebergements{justify-content: space-evenly;}
+    #recherche{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
+    #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
+    #populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #populaires figure{display:flex; width: 98%; padding: 2%; margin: 10px 0; background-color: white; border-radius: 15px;}
+    #populaires img{border-radius: 10px 0 0 10px;}
+    #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
+    #ligne3 figcaption{padding: 10px;}
+    #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
+    #filtres ul{display: flex; flex-wrap: wrap; margin-top: -15px;}
+    #filtres li{padding: 0 5px 0 0; margin: 7px 5px;}
+    #filtres li i{padding: 15px;}
 }
 
 /* règles CSS à appliquer sur mobile */
@@ -119,15 +168,14 @@ header a{
     #search h3{font-size: 22px;}
     #search p{font-size: 16px;}
     #search form{border: 1px solid #F2F2F2; border-radius: 10px; padding-bottom: 2px; height: 34px}
-    #search input{border: none; position: absolute; width: 80%;}
+    #search-bar{border: none; position: absolute; width: 80%;}
     #desktop-button{display: none;}
     #mobile-button{position: absolute; right: 3%; width: 39px; border-radius: 10px;}
-    #filtres{margin-top: 30px;}
     #filtres ul{display: flex; flex-wrap: wrap; margin-top: -15px;}
     #filtres li{padding: 0 5px 0 0; margin: 7px 5px;}
     #filtres li i{padding: 15px;}
     #main{padding: 0;}
-    #hebergements{display: flex; width: 100%; background-color: #F2F2F2; align-items: center; flex-direction: column-reverse; margin-top: 30px;}
+    #hebergements{flex-direction: column-reverse; background-color: #F2F2F2; align-items: center;}
     #recherche, #populaires{width: 90%; margin: 0; padding: 5px;}
     #hebergements h3{text-align: left; margin-left: 5px;}
     #populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; background-color: white; border-radius: 15px;}
@@ -136,41 +184,6 @@ header a{
     #ligne3 img{width: 120px; height: 120px;}
     #recherche figure{width: 98%; padding: 1%; margin: 10px 0px; text-align: center; background-color: white; border-radius: 15px;}
     #ligne1{justify-content: space-around;}
-}
-
-/* règles CSS à appliquer sur tablette */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
-    #nav{justify-content: space-between; align-items: center;}
-    #nav li{height: 100%; width: 120px; justify-content: space-around;}
-    #nav li:hover{border-top: 3px solid #0065FC;}
-    #nav li:hover a{margin-top: -3px; color: #0065FC;}
-    #nav a{height: 130px; align-items: center; text-decoration: none;}
-    #mobile-button{display: none;}
-    #search h3{font-size: 20px;}
-    #search p{font-size: 15px;}
-    #hebergements{display: flex; width: 100%; justify-content: space-evenly; margin-top: 30px;}
-    #recherche{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
-    #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
-    #populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #populaires figure{display:flex; width: 98%; padding: 2%; margin: 10px 0; background-color: white; border-radius: 15px;}
-    #populaires img{border-radius: 10px 0 0 10px;}
-    #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
-    #ligne3 figcaption{padding: 10px;}
-    #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
-    #filtres{margin-top: 30px;}
-    #filtres ul{display: flex; flex-wrap: wrap; margin-top: -15px;}
-    #filtres li{padding: 0 5px 0 0; margin: 7px 5px;}
-    #filtres li i{padding: 15px;}
-}
-
-#filtres p{
-    font-size: 14px;
-}
-
-#filtres ul{
-    padding: 0;
 }
 
 #filtres li{
@@ -184,16 +197,6 @@ header a{
 
 #filtres li:hover i{
     background-color: #0065FC; color: white;
-}
-
-#filtres li i{
-    background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
-    color: #0065FC;
-}
-
-#filtres p i{
-    padding: 7px 12px; border-radius: 90%; border: 3px solid #F2F2F2;
-    margin-right: 12px; color: #0065FC;
 }
 
 #recherche figcaption, #populaires figcaption{
