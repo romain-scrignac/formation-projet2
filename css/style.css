@@ -41,6 +41,37 @@ header a{
     height: 100%; display: flex;
 }
 
+#filtres li{
+    border: 2px solid #e6e6e6; border-radius: 30px; font-weight: bold;
+    list-style: none; padding: 13px 15px 13px 50px;
+}
+
+#filtres li:hover{
+    background-color: #DEEBFF; color: #0065FC; border-color: #DEEBFF; cursor: pointer;
+}
+
+#filtres li:hover i{
+    background-color: #0065FC; color: white;
+}
+
+#filtres li i{
+    margin: -14px 0 0 -57px; padding: 15px; position: absolute;
+    color: #0065FC; background-color: #DEEBFF; border-radius: 30px;
+}
+
+#filtres ul{
+    padding: 0; display: flex;
+}
+
+#info{
+    display: flex; align-items: center; font-size: 14px;
+}
+
+#info i{
+    border-radius: 30px; margin-right: 10px;
+    color: #0065FC; padding: 5px 10px; border: 3px solid #F2F2F2;
+}
+
 #search, #filtres, #info{
     margin: 20px 3%;
 }
@@ -81,24 +112,6 @@ header a{
     border-radius: 0 10px 10px 0; margin-left: -4px;
 }
 
-#filtres li i{
-    background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
-    color: #0065FC;
-}
-
-#filtres ul{
-    padding: 0;
-}
-
-#info{
-    display: flex; align-items: center; font-size: 14px;
-}
-
-#info i{
-    background-color: #DEEBFF; border-radius: 30px; margin-right: 10px;
-    color: #0065FC; padding: 7px 12px; border: 3px solid #F2F2F2;
-}
-
 #hebergements{
     display: flex; width: 100%; margin-top: 30px;
 }
@@ -113,10 +126,9 @@ header a{
     #nav a{height: 130px; align-items: center; text-decoration: none;}    
     #mobile-button{display: none;}
     #filtres{display: flex; align-items: center;}
-    #filtres li{padding: 13px 20px 13px 0px; margin: 0 10px;}
-    #filtres li i{padding: 15px;}
+    #filtres li{margin-left: 30px;}
     #hebergements{justify-content: space-evenly;}
-    #recherche{display: flex; flex-direction: column; width: 63%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #recherche{display: flex; flex-direction: column; width: 58%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
     #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
     #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
     #populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
@@ -138,6 +150,9 @@ header a{
     #mobile-button{display: none;}
     #search h3{font-size: 20px;}
     #search p{font-size: 15px;}
+    #filtres{margin-top: 40px;}
+    #filtres ul{display: flex; flex-wrap: wrap;}
+    #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
     #hebergements{justify-content: space-evenly;}
     #recherche{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
     #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
@@ -148,9 +163,6 @@ header a{
     #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
     #ligne3 figcaption{padding: 10px;}
     #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
-    #filtres ul{display: flex; flex-wrap: wrap; margin-top: -15px;}
-    #filtres li{padding: 0 5px 0 0; margin: 7px 5px;}
-    #filtres li i{padding: 15px;}
 }
 
 /* règles CSS à appliquer sur mobile */
@@ -167,36 +179,23 @@ header a{
     #nav a{text-decoration: none;}
     #search h3{font-size: 22px;}
     #search p{font-size: 16px;}
-    #search form{border: 1px solid #F2F2F2; border-radius: 10px; padding-bottom: 2px; height: 34px}
-    #search-bar{border: none; position: absolute; width: 80%;}
+    #search form{border: 1px solid #F2F2F2; border-radius: 10px;}
+    #search-bar{border: none;}
+    #info i{display: flex;}
     #desktop-button{display: none;}
     #mobile-button{position: absolute; right: 3%; width: 39px; border-radius: 10px;}
-    #filtres ul{display: flex; flex-wrap: wrap; margin-top: -15px;}
-    #filtres li{padding: 0 5px 0 0; margin: 7px 5px;}
-    #filtres li i{padding: 15px;}
-    #main{padding: 0;}
+    #filtres{margin-top: 40px;}
+    #filtres ul{display: flex; flex-wrap: wrap;}
+    #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
     #hebergements{flex-direction: column-reverse; background-color: #F2F2F2; align-items: center;}
     #recherche, #populaires{width: 90%; margin: 0; padding: 5px;}
     #hebergements h3{text-align: left; margin-left: 5px;}
     #populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; background-color: white; border-radius: 15px;}
+    #ligne1{justify-content: space-around;}
     #ligne3{display: flex; align-items: center; flex-direction: column;}
     #ligne3 figcaption{padding: 10px;}
     #ligne3 img{width: 120px; height: 120px;}
     #recherche figure{width: 98%; padding: 1%; margin: 10px 0px; text-align: center; background-color: white; border-radius: 15px;}
-    #ligne1{justify-content: space-around;}
-}
-
-#filtres li{
-    border: 2px solid #e6e6e6; border-radius: 30px; font-weight: bold;
-    display: inline;
-}
-
-#filtres li:hover{
-    background-color: #DEEBFF; color: #0065FC; border-color: #DEEBFF; cursor: pointer;
-}
-
-#filtres li:hover i{
-    background-color: #0065FC; color: white;
 }
 
 #recherche figcaption, #populaires figcaption{
