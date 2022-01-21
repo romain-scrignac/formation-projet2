@@ -116,6 +116,42 @@ header a{
     display: flex; width: 100%; margin-top: 30px;
 }
 
+#hebergements-liste p, #hebergements-populaires p{
+    margin: 5px 0;
+}
+
+#hebergements-liste img{
+    width: 98%; height: 100px; object-fit: cover; border-radius: 10px 10px 0 0;
+}
+
+#hebergements-liste figcaption, #hebergements-populaires figcaption{
+    text-align: left; font-size: 13px; padding: 5px 10px;
+}
+
+#hebergements a, #activites a{
+    text-decoration: none; color: black;
+}
+
+#more{
+    font-weight: bold;
+}
+
+.hotel_name{
+    display: block; font-weight: bold; margin-bottom: 5px; font-size: 13px;
+}
+
+.blue-star{
+    color: #0065FC;
+}
+
+.grey-star{
+    color: #F2F2F2;
+}
+
+figure{
+    box-shadow: 1px 1px 10px #aaa;
+}
+
 /* règles CSS à appliquer sur ordi */
 @media screen and (min-width: 992px) {
     header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
@@ -128,15 +164,15 @@ header a{
     #filtres{display: flex; align-items: center;}
     #filtres li{margin-left: 30px;}
     #hebergements{justify-content: space-evenly;}
-    #recherche{display: flex; flex-direction: column; width: 58%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
+    #hebergements-liste{display: flex; flex-direction: column; width: 58%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #hebergements-liste figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
     #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
-    #populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #populaires figure{display:flex; width: 98%; padding: 2%; margin: 10px 0; background-color: white; border-radius: 15px;}
-    #populaires img{border-radius: 10px 0 0 10px;}
-    #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
-    #ligne3 figcaption{padding: 10px;}
-    #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
+    #hebergements-populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #hebergements-populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; background-color: white; border-radius: 15px;}
+    #ligne3{display: flex; flex-direction: column; padding: 0 15px;}
+    #ligne3 a{display: flex;}
+    #ligne3 figcaption{ padding: 10px;}
+    #ligne3 img{width: 100px; height: 100px; object-fit: cover; border-radius: 10px 0 0 10px;}
 }
 
 /* règles CSS à appliquer sur tablette */
@@ -154,15 +190,15 @@ header a{
     #filtres ul{display: flex; flex-wrap: wrap;}
     #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
     #hebergements{justify-content: space-evenly;}
-    #recherche{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #recherche figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
+    #hebergements-liste{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #hebergements-liste figure{width: 30%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
     #ligne1, #ligne2{display: flex; justify-content: space-around; align-content: center; margin-bottom: 25px;}
-    #populaires{display:flex; flex-direction: column; width: 28%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
-    #populaires figure{display:flex; width: 98%; padding: 2%; margin: 10px 0; background-color: white; border-radius: 15px;}
-    #populaires img{border-radius: 10px 0 0 10px;}
+    #hebergements-populaires{display:flex; flex-direction: column; width: 30%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
+    #hebergements-populaires figure{display:flex; width: 98%; padding: 2%; margin: 10px 0; background-color: white; border-radius: 15px;}
     #ligne3{display: flex; align-items: center; flex-direction: column; text-align: center; padding: 0 15px;}
+    #ligne3 a{display: flex;}
     #ligne3 figcaption{padding: 10px;}
-    #ligne3 img{width: 110px; height: 120px; clip-path: inset(10% 10% 15% 10%);}
+    #ligne3 img{width: 80px; height: 80px; object-fit: cover; border-radius: 10px 0 0 10px;}
 }
 
 /* règles CSS à appliquer sur mobile */
@@ -187,43 +223,15 @@ header a{
     #filtres{margin-top: 40px;}
     #filtres ul{display: flex; flex-wrap: wrap;}
     #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
-    #hebergements{flex-direction: column-reverse; background-color: #F2F2F2; align-items: center;}
-    #recherche, #populaires{width: 90%; margin: 0; padding: 5px;}
+    #hebergements{flex-direction: column-reverse; align-items: center;}
     #hebergements h3{text-align: left; margin-left: 5px;}
-    #populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; background-color: white; border-radius: 15px;}
+    #hebergements-liste, #hebergements-populaires{width: 90%; margin: 0; padding: 5px;}
+    #hebergements-populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; border-radius: 15px;}
     #ligne1{justify-content: space-around;}
-    #ligne3{display: flex; align-items: center; flex-direction: column;}
+    #ligne3{display: flex; align-items: center; flex-direction: column; background-color: #F2F2F2;}
     #ligne3 figcaption{padding: 10px;}
     #ligne3 img{width: 120px; height: 120px;}
-    #recherche figure{width: 98%; padding: 1%; margin: 10px 0px; text-align: center; background-color: white; border-radius: 15px;}
-}
-
-#recherche figcaption, #populaires figcaption{
-    text-align: left; font-size: 13px; padding: 5px 10px;
-}
-
-.hotel_name{
-    display: block; font-weight: bold; margin-bottom: 5px; font-size: 13px;
-}
-
-.blue-star{
-    color: #0065FC;
-}
-
-.grey-star{
-    color: #F2F2F2;
-}
-
-#recherche p, #populaires p{
-    margin: 5px 0;
-}
-
-#recherche img{
-    width: 100%; height: 100px; object-fit: fill; border-radius: 10px 10px 0 0;
-}
-
-#recherche a{
-    font-weight: bold; text-decoration: none; color: black;
+    #hebergements-liste figure{width: 98%; padding: 1%; margin: 10px 0px; text-align: center; background-color: white; border-radius: 15px;}
 }
 
 #activites img{
