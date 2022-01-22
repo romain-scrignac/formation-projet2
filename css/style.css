@@ -41,9 +41,13 @@ header a{
     height: 100%; display: flex;
 }
 
+#filtres ul{
+    padding: 0; display: flex;
+}
+
 #filtres li{
     border: 2px solid #e6e6e6; border-radius: 30px; font-weight: bold;
-    list-style: none; padding: 13px 15px 13px 50px;
+    list-style: none; padding: 12px 15px 12px 50px;
 }
 
 #filtres li:hover{
@@ -59,21 +63,17 @@ header a{
     color: #0065FC; background-color: #DEEBFF; border-radius: 30px;
 }
 
-#filtres ul{
-    padding: 0; display: flex;
-}
-
 #info{
-    display: flex; align-items: center; font-size: 14px;
+    display: flex; font-size: 14px;
 }
 
 #info i{
-    border-radius: 30px; margin-right: 10px;
-    color: #0065FC; padding: 5px 10px; border: 3px solid #F2F2F2;
+    margin-right: 10px; padding: 3px 8px 5px 8px; color: #0065FC;
+    border: 3px solid #F2F2F2; border-radius: 30px;
 }
 
 #search, #filtres, #info{
-    margin: 20px 3%;
+    margin: 10px 4%;
 }
 
 #search h3{
@@ -136,6 +136,10 @@ header a{
     font-weight: bold;
 }
 
+#title-pop{
+    display: flex; align-items: center; justify-content: space-between;
+}
+
 .hotel_name{
     display: block; font-weight: bold; margin-bottom: 5px; font-size: 13px;
 }
@@ -163,6 +167,7 @@ figure{
     #mobile-button{display: none;}
     #filtres{display: flex; align-items: center;}
     #filtres li{margin-left: 30px;}
+    #info{align-items: center;}
     #hebergements{justify-content: space-evenly;}
     #hebergements-liste{display: flex; flex-direction: column; width: 58%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
     #hebergements-liste figure{width: 28%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
@@ -187,8 +192,10 @@ figure{
     #search h3{font-size: 20px;}
     #search p{font-size: 15px;}
     #filtres{margin-top: 40px;}
+    #filtres h4{margin-bottom: 0;}
     #filtres ul{display: flex; flex-wrap: wrap;}
-    #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
+    #filtres li{margin-right: 20px; margin-bottom: 15px;}
+    #info{align-items: center;}
     #hebergements{justify-content: space-evenly;}
     #hebergements-liste{display: flex; flex-direction: column; width: 50%; background-color: #F2F2F2; padding: 15px; border-radius: 15px;}
     #hebergements-liste figure{width: 30%; margin: 0; text-align: center; background-color: white; padding: 5px; border-radius: 15px;}
@@ -215,20 +222,22 @@ figure{
     #nav a{text-decoration: none;}
     #search h3{font-size: 22px;}
     #search p{font-size: 16px;}
-    #search form{border: 1px solid #F2F2F2; border-radius: 10px;}
-    #search-bar{border: none;}
-    #info i{display: flex;}
+    #search form{display: flex; justify-content: space-between;border: 1px solid #F2F2F2; border-radius: 10px;}
+    #search-bar{border: none; width: 80%;}
     #desktop-button{display: none;}
-    #mobile-button{position: absolute; right: 3%; width: 39px; border-radius: 10px;}
-    #filtres{margin-top: 40px;}
-    #filtres ul{display: flex; flex-wrap: wrap;}
-    #filtres li{margin-right: 20px; margin-left: 5px; margin-bottom: 15px;}
-    #hebergements{flex-direction: column-reverse; align-items: center;}
-    #hebergements h3{text-align: left; margin-left: 5px;}
-    #hebergements-liste, #hebergements-populaires{width: 90%; margin: 0; padding: 5px;}
+    #mobile-button{width: 39px; border-radius: 10px;}
+    #filtres{margin-top: 30px;}
+    #filtres h4{margin-bottom: 0;}
+    #filtres ul{display: flex; flex-wrap: wrap; margin-top: 7px;}
+    #filtres li{margin: 6px 7px;}
+    #info{align-items: baseline;}
+    #hebergements{flex-direction: column-reverse; align-items: center;}    
+    #hebergements-liste, #hebergements-populaires{width: 100%; margin: 0;}
+    #hebergements-populaires{background-color: #F2F2F2;}
+    #title-pop{padding: 0 4%; margin-top: 15px;}
     #hebergements-populaires figure{display:flex; width: 98%; padding: 1%; margin: 10px 0; border-radius: 15px;}
     #ligne1{justify-content: space-around;}
-    #ligne3{display: flex; align-items: center; flex-direction: column; background-color: #F2F2F2;}
+    #ligne3{display: flex; align-items: center; flex-direction: column; padding: 0 4%;}
     #ligne3 figcaption{padding: 10px;}
     #ligne3 img{width: 120px; height: 120px;}
     #hebergements-liste figure{width: 98%; padding: 1%; margin: 10px 0px; text-align: center; background-color: white; border-radius: 15px;}
