@@ -9,6 +9,7 @@ body{
     margin: 0;
 }
 
+/* header */
 header{
     display: flex;
 }
@@ -41,37 +42,7 @@ header a{
     height: 100%; display: flex;
 }
 
-#filtres ul{
-    padding: 0; display: flex;
-}
-
-#filtres li{
-    border: 2px solid #e6e6e6; border-radius: 30px; font-weight: bold;
-    list-style: none; padding: 12px 15px 12px 50px;
-}
-
-#filtres li:hover{
-    background-color: #DEEBFF; color: #0065FC; border-color: #DEEBFF; cursor: pointer;
-}
-
-#filtres li:hover i{
-    background-color: #0065FC; color: white;
-}
-
-#filtres li i{
-    margin: -14px 0 0 -57px; padding: 15px; position: absolute;
-    color: #0065FC; background-color: #DEEBFF; border-radius: 30px;
-}
-
-#info{
-    display: flex; font-size: 14px;
-}
-
-#info i{
-    margin-right: 10px; padding: 3px 8px 5px 8px; color: #0065FC;
-    border: 3px solid #F2F2F2; border-radius: 30px;
-}
-
+/* Formulaire de recherche */
 #search, #filtres, #info{
     margin: 10px 4%;
 }
@@ -112,6 +83,39 @@ header a{
     border-radius: 0 10px 10px 0; margin-left: -4px;
 }
 
+/* Filtres */
+#filtres ul{
+    padding: 0; display: flex;
+}
+
+#filtres li{
+    border: 2px solid #e6e6e6; border-radius: 30px; font-weight: bold;
+    list-style: none; padding: 12px 15px 12px 50px;
+}
+
+#filtres li:hover{
+    background-color: #DEEBFF; color: #0065FC; border-color: #DEEBFF; cursor: pointer;
+}
+
+#filtres li:hover i{
+    background-color: #0065FC; color: white;
+}
+
+#filtres li i{
+    margin: -14px 0 0 -57px; padding: 15px; position: absolute;
+    color: #0065FC; background-color: #DEEBFF; border-radius: 30px;
+}
+
+#info{
+    display: flex; font-size: 14px;
+}
+
+#info i{
+    margin-right: 10px; padding: 3px 8px 5px 8px; color: #0065FC;
+    border: 3px solid #F2F2F2; border-radius: 30px;
+}
+
+/* hebergements */
 #hebergements{
     display: flex; width: 100%; margin-top: 30px;
 }
@@ -133,29 +137,39 @@ header a{
 }
 
 #more{
-    font-weight: bold;
+    font-weight: bold; padding-left: 30px; padding-top: 15px; font-size: 14px;
 }
 
 #title-pop{
     display: flex; align-items: center; justify-content: space-between;
 }
 
-#title-pop i{
-    margin-right: 30px;
-}
-
 .hotel_name{
     display: block; font-weight: bold; margin-bottom: 5px; font-size: 13px;
+}
+
+/* Etoiles de notation */
+.stars{
+    font-size: 10px;
 }
 
 .blue-star{
     color: #0065FC;
 }
 
-.grey-star{
-    color: #F2F2F2;
+.blue-star i{
+    margin-right: 1px;
 }
 
+.grey-star{
+    color: #e3e3e3; margin-left: -2px;
+}
+
+.grey-star i{
+    margin-right: 1px;
+}
+
+/* Effet des vignettes */
 figure{
     box-shadow: 1px 1px 10px #aaa;
 }
@@ -172,16 +186,18 @@ figure{
     #filtres{display: flex; align-items: center;}
     #filtres li{margin-left: 30px;}
     #info{align-items: center;}
-    #hebergements{justify-content: space-evenly; width: 100%;}
-    #hebergements-liste{width: 58%; padding: 0 10px 10px 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
+    #hebergements{justify-content: space-evenly; width: 100%; padding-top:}
+    #hebergements-liste{width: 60%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
     #hebergements-liste figure{width: 27%; margin: 0; padding: 4px; background-color: white; border-radius: 15px;}
     .ligne-liste{display: flex; justify-content: space-evenly; margin-bottom: 25px;}
-    #hebergements-populaires{width: 29%; padding: 0 10px 10px 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
+    #hebergements-populaires{display: flex; width: 30%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
     #hebergements-populaires figure{width: 100%; padding: 4px; background-color: white; border-radius: 15px;}
-    #ligne-pop{display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; margin-top: 0;  padding: 0 30px 0 30px;}
-    #ligne-pop a{display: flex; text-align: left;}
-    #ligne-pop img{width: 90px; height: 100px; object-fit: cover; border-radius: 10px 0 0 10px;}
-    #hebergements h3, #more{margin-left: 30px;}
+    #hebergements-populaires figcaption{display: flex; flex-direction: column; justify-content: space-between;}
+    #title-pop{width: 80%; margin: 20px auto 5px auto;justify-content: space-between;}
+    #ligne-pop{width: 80%; padding-bottom: 15px; margin: auto; display: flex; flex-direction: column; align-items: center;}
+    #ligne-pop a{display: flex;}
+    #ligne-pop img{width: 40%; min-width: 40%; height: 110px; object-fit: cover; border-radius: 10px 0 0 10px;}
+    #hebergements-liste h3, #more{margin-left: 30px;}
 }
 
 /* règles CSS à appliquer sur tablette */
