@@ -111,8 +111,8 @@ header a{
 }
 
 #info i{
-    margin-right: 10px; padding: 3px 8px 5px 8px; color: #0065FC;
-    border: 3px solid #F2F2F2; border-radius: 30px;
+    margin-right: 10px; padding: 5px 8px; color: #0065FC;
+    border: 2px solid #F2F2F2; border-radius: 30px; font-size: 12px;
 }
 
 /* hebergements */
@@ -202,7 +202,7 @@ figure{
 }
 
 /* règles CSS à appliquer sur tablette */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
     #nav{justify-content: space-between; align-items: center;}
     #nav li{height: 100%; width: 120px; justify-content: space-around;}
@@ -240,7 +240,7 @@ figure{
 }
 
 /* règles CSS à appliquer sur mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     html::-webkit-scrollbar{display: none;}
     html{-ms-overflow-style: none; scrollbar-width: none;}
     header{align-items: center; flex-direction: column; width: 100%;}
