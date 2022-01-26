@@ -207,12 +207,12 @@ figure{
     .ligne-liste img{width: 100%; height: 90px; object-fit: cover; border-radius: 10px 10px 0 0;}
     #hebergements-populaires{width: 30%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
     #title-pop{width: 80%; margin: 20px auto 5px auto; justify-content: space-between;}
-    #ligne-pop{display: flex; flex-direction: column; align-items: center;}
+    #ligne-pop{display: flex; flex-direction: column; align-items: center; padding-bottom: 15px; }
     #ligne-pop a{width: 85%; display: flex; margin: 15px 0;}
     #ligne-pop figure{display: flex; width: 100%; height: 110px; margin: auto; padding: 4px; background-color: white; border-radius: 15px;}
     #ligne-pop img{width: 40%; min-width: 40%; height: 100%; object-fit: cover; border-radius: 10px 0 0 10px;}
     #ligne-pop figcaption{width: 60%; display: flex; flex-direction: column; justify-content: space-between;}
-    #more{padding-left: 30px;}
+    #more{padding-left: 30px; padding-top: 10px;}
     #activites{margin: 30px 0; padding: 0 10px; display: flex; flex-direction: column;}
     #activites h3{margin-left: 30px;}
     #activites-liste{padding: 0 30px; display: flex; justify-content: space-between;}
