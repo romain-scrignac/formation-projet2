@@ -188,7 +188,7 @@ figure{
 
 /* règles CSS à appliquer sur ordi */
 @media screen and (min-width: 992px) {
-    header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
+    header{justify-content: space-between; align-items: center; padding: 0 10px;height: 130px;}
     #nav{justify-content: space-between; align-items: center;}
     #nav li{height: 100%; width: 120px; justify-content: space-around;}
     #nav li:hover{border-top: 3px solid #0065FC;}
@@ -199,27 +199,40 @@ figure{
     #filtres li{margin-left: 30px;}
     #info{align-items: center;}
     #hebergements{justify-content: space-evenly;}
-
     #hebergements-liste{width: 60%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
     #hebergements-liste h3{margin-left: 30px;}
     .ligne-liste{display: flex; justify-content: space-evenly; margin-bottom: 25px;}
     .ligne-liste a{display: flex; width: 28%;}
     .ligne-liste figure{width: 100%; margin: 0; padding: 4px; background-color: white; border-radius: 15px;}
     .ligne-liste img{width: 100%; height: 90px; object-fit: cover; border-radius: 10px 10px 0 0;}
-
     #hebergements-populaires{width: 30%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
-    #title-pop{width: 80%; margin: 20px auto 5px auto;justify-content: space-between;}
+    #title-pop{width: 80%; margin: 20px auto 5px auto; justify-content: space-between;}
     #ligne-pop{display: flex; flex-direction: column; align-items: center;}
     #ligne-pop a{width: 85%; display: flex; margin: 15px 0;}
     #ligne-pop figure{display: flex; width: 100%; height: 110px; margin: auto; padding: 4px; background-color: white; border-radius: 15px;}
     #ligne-pop img{width: 40%; min-width: 40%; height: 100%; object-fit: cover; border-radius: 10px 0 0 10px;}
     #ligne-pop figcaption{width: 60%; display: flex; flex-direction: column; justify-content: space-between;}
     #more{padding-left: 30px;}
+    #activites{margin: 30px 0; padding: 0 10px; display: flex; flex-direction: column;}
+    #activites h3{margin-left: 30px;}
+    #activites-liste{padding: 0 30px; display: flex; justify-content: space-between;}
+    .activites-1, .activites-2{width: 22%;}
+    .activites-1{justify-content: space-between;}
+    .activites-2{display: flex; flex-direction: column; justify-content: space-between;}
+    #activites a{display: flex; width: 100%; padding: 0;}
+    #activites figure{display: flex; border-radius: 20px; width: 100%; margin: 0; display: flex; flex-direction: column;}
+    #activites img{object-fit: cover; border-radius: 20px 20px 0 0;}
+    #activites figcaption{display: flex; height: 50px; align-items: center; font-weight: bold; font-size: 13px; padding: 0 20px;}
+    .fig1{height: 350px;} .fig1 img{min-height: 300px;}
+    #fig2-1{height: 180px;} #fig2-1 img{min-height: 130px;}
+    #fig2-2{height: 130px;} #fig2-2 img{min-height: 80px;}
+    #fig2-3{height: 150px;} #fig2-3 img{min-height: 100px;}
+    #fig2-4{height: 160px;} #fig2-4 img{min-height: 110px;}
 }
 
 /* règles CSS à appliquer sur tablette */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    header{justify-content: space-between; align-items: center; padding: 0 30px; height: 130px;}
+    header{justify-content: space-between; align-items: center; padding: 0 10px; height: 130px;}
     #nav{justify-content: space-between; align-items: center;}
     #nav li{height: 100%; width: 120px; justify-content: space-around;}
     #nav li:hover{border-top: 3px solid #0065FC;}
@@ -234,7 +247,6 @@ figure{
     #filtres li{margin-right: 20px; margin-bottom: 15px;}
     #info{align-items: center;}
     #hebergements{display: flex; flex-direction: column-reverse;}
-
     #hebergements-liste{width: 95%; height: 60%; margin: auto; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
     #hebergements-liste h3{width: 95%; margin: 20px auto;}
     .ligne-liste{display: flex; justify-content: space-evenly; margin-bottom: 25px;}
@@ -242,8 +254,7 @@ figure{
     .ligne-liste figure{width: 100%; margin: 0; padding: 4px; background-color: white; border-radius: 15px;}
     .ligne-liste img{width: 100%; height: 90px; object-fit: cover; border-radius: 10px 10px 0 0;}
     .ligne-liste h3{width: 92%; margin: 20px auto;}
-    #more{padding-left: 20px;}
-
+    #more{padding-left: 20px; padding-bottom: 10px;}
     #hebergements-populaires{width: 95%; margin: 0 auto 30px auto; padding-bottom: 20px; background-color: #F2F2F2; border-radius: 15px;}
     #title-pop{width: 95%; margin: 20px auto;}
     #ligne-pop{width: 100%; padding-bottom: 15px; margin: auto; display: flex; align-items: center; justify-content: space-evenly;}
@@ -251,6 +262,22 @@ figure{
     #ligne-pop figure{display: flex; width: 100%; margin: 0; padding: 4px; background-color: white; border-radius: 15px;}
     #ligne-pop figcaption{display: flex; flex-direction: column; justify-content: space-between;}
     #ligne-pop img{width: 40%; min-width: 40%; height: 120px; object-fit: cover; border-radius: 10px 0 0 10px;}
+
+    #activites{margin: 20px 0; padding: 0 10px; display: flex; flex-direction: column;}
+    #activites h3{margin-left: 30px;}
+    #activites-liste{padding: 0 30px; display: flex; flex-wrap: wrap; justify-content: space-around;}
+    .activites-1, .activites-2{width: 45%; margin-bottom: 40px;}
+    .activites-1{justify-content: space-between;}
+    .activites-2{display: flex; flex-direction: column-reverse; justify-content: space-between;}
+    #activites a{display: flex; width: 100%; padding: 0;}
+    #activites figure{display: flex; border-radius: 20px; width: 100%; margin: 0; display: flex; flex-direction: column;}
+    #activites img{object-fit: cover; border-radius: 20px 20px 0 0;}
+    #activites figcaption{display: flex; height: 40px; align-items: center; font-weight: bold; font-size: 13px; padding: 0 20px;}
+    .fig1{height: 320px;} .fig1 img{min-height: 280px;}
+    #fig2-1{height: 160px;} #fig2-1 img{min-height: 100px;}
+    #fig2-2{height: 120px;} #fig2-2 img{min-height: 50px;}
+    #fig2-3{height: 130px;} #fig2-3 img{min-height: 70px;}
+    #fig2-4{height: 150px;} #fig2-4 img{min-height: 80px;}
 }
 
 /* règles CSS à appliquer sur mobile */
