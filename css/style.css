@@ -19,7 +19,7 @@ header a{
 }
 
 #logo{
-    display: flex; margin-left: 20px;
+    display: flex; margin-left: 30px;
 }
 
 #logo img{
@@ -270,7 +270,7 @@ figure{
     #ligne-pop img{width: 40%; min-width: 40%; height: 120px; object-fit: cover; border-radius: 10px 0 0 10px;}
     #activites{margin: 20px 0; padding: 0 10px; display: flex; flex-direction: column;}
     #activites h3{margin-left: 30px;}
-    #activites-liste{padding: 0 30px; display: flex; flex-wrap: wrap; justify-content: space-around;}
+    #activites-liste{padding: 0; display: flex; flex-wrap: wrap; justify-content: space-around;}
     .activites-1, .activites-2{width: 45%; margin-bottom: 40px;}
     .activites-1{justify-content: space-between;}
     .activites-2{display: flex; flex-direction: column-reverse; justify-content: space-between;}
