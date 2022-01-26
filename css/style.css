@@ -229,7 +229,7 @@ figure{
     #more{padding-left: 30px; padding-top: 10px;}
 
     /* Activités */
-    #activites{margin: 30px 0; padding: 0 10px; display: flex; flex-direction: column;}
+    #activites{width: 97%; margin: 30px auto; padding: 0; display: flex; flex-direction: column;}
     #activites h3{margin-left: 30px;}
     #activites-liste{padding: 0 30px; display: flex; justify-content: space-between;}
     .activites-1, .activites-2{width: 22%;}
