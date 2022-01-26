@@ -228,6 +228,12 @@ figure{
     #fig2-2{height: 130px;} #fig2-2 img{min-height: 80px;}
     #fig2-3{height: 150px;} #fig2-3 img{min-height: 100px;}
     #fig2-4{height: 160px;} #fig2-4 img{min-height: 110px;}
+
+    footer{width: 100%; background-color: #F2F2F2; padding: 20px 0; margin-top: 50px; padding-left: 30px; display: flex;}
+    footer div{width: 30%;}
+    footer h4{width: 90%; margin: 20px auto 15px auto; font-weight: bold;}
+    footer ul{width: 90%; margin: auto; padding: 0;}
+    footer li{margin: 10px 0; list-style: none; font-size: 14px;}
 }
 
 /* règles CSS à appliquer sur tablette */
@@ -262,7 +268,6 @@ figure{
     #ligne-pop figure{display: flex; width: 100%; margin: 0; padding: 4px; background-color: white; border-radius: 15px;}
     #ligne-pop figcaption{display: flex; flex-direction: column; justify-content: space-between;}
     #ligne-pop img{width: 40%; min-width: 40%; height: 120px; object-fit: cover; border-radius: 10px 0 0 10px;}
-
     #activites{margin: 20px 0; padding: 0 10px; display: flex; flex-direction: column;}
     #activites h3{margin-left: 30px;}
     #activites-liste{padding: 0 30px; display: flex; flex-wrap: wrap; justify-content: space-around;}
@@ -278,6 +283,10 @@ figure{
     #fig2-2{height: 120px;} #fig2-2 img{min-height: 50px;}
     #fig2-3{height: 130px;} #fig2-3 img{min-height: 70px;}
     #fig2-4{height: 150px;} #fig2-4 img{min-height: 80px;}
+    footer{width: 100%; background-color: #F2F2F2; padding: 20px 0; display: flex; justify-content: space-around;}
+    footer h4{width: 100%; margin: 20px auto 15px auto; font-weight: bold;}
+    footer ul{width: 100%; margin: auto; padding: 0;}
+    footer li{margin: 10px 0; list-style: none; font-size: 14px;}
 }
 
 /* règles CSS à appliquer sur mobile */
