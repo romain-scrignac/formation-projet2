@@ -232,18 +232,18 @@ figure{
     #activites{width: 97%; margin: 30px auto; padding: 0; display: flex; flex-direction: column;}
     #activites h3{margin-left: 30px;}
     #activites-liste{padding: 0 30px; display: flex; justify-content: space-between;}
-    .activites-1, .activites-2{width: 22%;}
+    .activites-1, .activites-2{width: 23%;}
     .activites-1{justify-content: space-between;}
     .activites-2{display: flex; flex-direction: column; justify-content: space-between;}
     #activites a{display: flex; width: 100%; padding: 0;}
     #activites figure{display: flex; border-radius: 20px; width: 100%; margin: 0; display: flex; flex-direction: column;}
     #activites img{object-fit: cover; border-radius: 20px 20px 0 0;}
     #activites figcaption{display: flex; height: 50px; align-items: center; font-weight: bold; font-size: 13px; padding: 0 20px;}
-    .fig1{height: 350px;} .fig1 img{min-height: 300px;}
-    #fig2-1{height: 180px;} #fig2-1 img{min-height: 130px;}
-    #fig2-2{height: 130px;} #fig2-2 img{min-height: 80px;}
-    #fig2-3{height: 150px;} #fig2-3 img{min-height: 100px;}
-    #fig2-4{height: 160px;} #fig2-4 img{min-height: 110px;}
+    .fig1{height: 400px;} .fig1 img{min-height: 350px;}
+    #fig2-1{height: 210px;} #fig2-1 img{min-height: 160px;}
+    #fig2-2{height: 160px;} #fig2-2 img{min-height: 110px;}
+    #fig2-3{height: 180px;} #fig2-3 img{min-height: 130px;}
+    #fig2-4{height: 190px;} #fig2-4 img{min-height: 140px;}
 
     /* Footer */
     footer{width: 100%; background-color: #F2F2F2; padding: 20px 0; margin-top: 50px; padding-left: 30px; display: flex;}
