@@ -208,9 +208,6 @@ figure{
     #filtres li{margin-left: 30px;}
     #info{align-items: center;}
 
-    /* Taille des images */
-    .small{display: none;}
-
     /* Hebergements */
     #hebergements{justify-content: space-evenly;}
     #hebergements-liste{width: 60%; padding-top: 10px; flex-direction: column; background-color: #F2F2F2; border-radius: 15px;}
@@ -273,9 +270,6 @@ figure{
     #filtres ul{display: flex; flex-wrap: wrap;}
     #filtres li{margin-right: 20px; margin-bottom: 15px;}
     #info{align-items: center;}
-
-    /* Taille des images */
-    .small{display: none;}
 
      /* Hebergements */
     #hebergements{display: flex; flex-direction: column-reverse;}
@@ -345,9 +339,6 @@ figure{
     #filtres ul{display: flex; flex-wrap: wrap; margin-top: 7px;}
     #filtres li{margin: 6px 7px;}
     #info{align-items: baseline;}
-
-    /* Taille des images */
-    .medium{display: none;}
 
     /* Hebergements */
     #hebergements{flex-direction: column-reverse; align-items: center;}
