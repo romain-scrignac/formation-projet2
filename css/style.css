@@ -28,7 +28,9 @@
         height: 45px;
     }
 
-    main{width: 100%;}
+    main{
+        width: 100%;
+    }
     
     /* Barre de navigation */
     #nav{
